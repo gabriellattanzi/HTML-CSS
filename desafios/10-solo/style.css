@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Idroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgreen;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(60, 216, 130), #195A36);
+    text-align: center;
+    color: white;
+    padding: 1px;  
+    margin: -8px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);    
+    }
+header > h1 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 2em;
+               
+}
+header > p {
+    padding-bottom: 20px;
+}
+
+header > nav {    
+    padding: 8px;
+    text-align: left;
+    
+    }
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;  
+    padding: 6px;
+    font-size: 0.8em;
+    
+    }
+nav > a:hover {
+    background-color: #84E1AD;
+    color: black;
+    text-decoration: underline;
+    border-radius: 5%;
+    }
+
+
+main{
+    background-color: white;
+    margin: 8px 50px 0px 50px;
+    text-align: justify;
+    padding: 8px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);    
+
+    
+
+    }
+p > a {
+    text-decoration: none;
+    color: #256441;
+    font-weight: bolder;
+}
+p > a:hover{
+    text-decoration: underline;
+}
+main > h1 {
+    color: #1B5C39;
+    font-family: Idroid;
+    
+    }
+main > h2 {
+    color: #256441; 
+    background-color: #DCF3E6;
+    font-family: Idroid;   
+}
+section#extra > h3 {
+    background-color: #2FA866;
+    color: white;
+    padding: 7px;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+section#extra{
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    padding: 0px 7px 7px 7px;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7em;
+    background-color: #1A5C38;
+    margin: 0px;    
+    color: white;   
+}
+section#video{
+    background-color: #1A5C38;
+}

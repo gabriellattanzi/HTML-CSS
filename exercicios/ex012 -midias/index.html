@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1> Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls poster="midia/imagens/limoes-capa.png" width="560" loop>
+        <source src="midia/videos/meu-video720.mp4" type="video/mp4">
+        <source src="midia/videos/Meu-Video.webm" type="video/webm">
+        <p>Seu Navegador não tem compatibilidade com reprodução de vídeos</p>
+<!--desse jeito ele sempre tenta de cima pra baixo, se nao conseguir ele vai descendo-->
+    </video>
+   <!--MP4 e M4V(este é melhor para youtube) são os mais compatíveis--> 
+   <h1>Inserindo vídeos do YouTube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=v0A8tx4-Kc4FB6fL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <h1>Inserindo vídeos do Vimeo</h1>
+   <iframe src="https://player.vimeo.com/video/866854834?h=fc78b02e26&autoplay=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
+<!--Evite usar videos hospedados localmente, pq usa MUITA banda de download ($$$)-->

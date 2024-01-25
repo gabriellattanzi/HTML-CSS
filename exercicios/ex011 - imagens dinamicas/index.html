@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(min-width: 1025px)" srcset="imagens/foto-g.png" type="image/png">        
+        <source media="(min-width: 725px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexivél">
+        <!--Se usar o max witdh, comece pela imagem menor, finalizando com a maior.. se usar o max-width é ao contrário (comece pela menor, e termine pela maior)-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5</p>
+   <!--Geralmente compativel com MP3, WAV(muito pesado, evite), OGG-->
+    <audio preload="metadata" autoplay controls loop><!--metadata só carrega o audio qd o cara clica-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg "><!--source src-->
+        <source src="midia/guanacast-33.ogg" type="audio/gg">
+        <source src="midia/guianacast-33.wav" type="audio/wav"> <!--só exemplos das outras mídias, se deixar assim ele tenta carregar o 1 da lista (mp3 no caso)se nao carregar ele vai para o de baixo (ogg, depois wav no caso)-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
