@@ -9,6 +9,12 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: grey;
+        }
         table {
             width: 500px;
             border-collapse: collapse;
@@ -16,10 +22,15 @@
         td, th {
             border: 1px solid black;
             padding: 10px;
+            
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.75);
             color: white;
+        }
+
+        tbody > tr:nth-child(2n){ /*EFEITO ZEBRADO > este cód (2n) é para o par, pode-se usar tb (even); e (odd) para impar*/
+            background-color: lightcyan;
         }
 
         td.num {
@@ -32,6 +43,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY   
@@ -40,10 +52,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Populaçao das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">Populaçao</th>
 
             </tr>
         </thead>
@@ -67,7 +80,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!--SCOOP é para sinalizar onde está linkado a informação (facilita mecanismos de buscas etc)-->
                 <td class="num"><strong>89 233 089</strong></td>
             </tr>
         </tfoot>
