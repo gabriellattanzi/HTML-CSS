@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        col.cnome {
+            background-color: greenyellow;
+        }
+        col.csexoeidade {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela, Agrupando Colunas</h1>
+
+    <table>
+        <colgroup> <!--Agrupando Colunas-->
+            <col class="cnome">
+            <col class="csexoeidade" span="2"> <!--Agrupando duas colunas-->
+            <col class="cprof">
+        </colgro>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Escritora</td>
+        </tr>
+        <tr>
+            <td>Betinha</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</bodp>
+</html>
