@@ -13,8 +13,11 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
-        <p><label for="inome">Nome:</label> <!--label é essencial para linkar a caixa de texto com o que é pedido-->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <!--label é essencial para linkar a caixa de texto com o que é pedido--> 
+            <!--existem dois metodos, get e post, por padrao é get, o post não mostra os dados digitados na url (mas nao é mais seguro por causa disso)
+            ->além disso GET só pode enviar até 3 mil bytes de dados(aprox 3 mil letras)-->
             <input type="text" name="nome" id="inome"></p> <!--name mais útil para html e php e id mais útil para javascript e label-->
         <p><label for="isobrenome">Sobrenome: </label>
             <input type="text" name="sobrenome" id="isobrenome"></p>
